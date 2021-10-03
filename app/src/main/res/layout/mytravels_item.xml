@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/carView"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    cardView:cardCornerRadius="20dp"
+    cardView:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/choosecompany"
+            android:layout_width="139dp"
+            android:layout_height="38dp"
+
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#E43870"
+            android:text="בחר חברה"
+            android:textSize="8sp"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/travelsubmitend"
+            android:layout_width="140dp"
+            android:layout_height="37dp"
+            android:layout_marginBottom="76dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#E43870"
+            android:text="הנסיעה הסתיימה"
+            android:textSize="8sp"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnercompanies"
+            android:layout_width="64dp"
+            android:layout_height="45dp"
+
+            android:layout_marginEnd="196dp"
+            android:layout_marginRight="196dp"
+            android:layout_marginBottom="32dp"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/idstart"
+            android:layout_width="154dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="left"
+            android:text="start date"
+            android:textSize="12dp"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintBottom_toTopOf="@+id/enddate"
+            cardView:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/enddate"
+            android:layout_width="148dp"
+            android:layout_height="27dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="52dp"
+            android:gravity="left"
+            android:text="end date"
+            android:textSize="12dp"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/numt"
+            android:layout_width="104dp"
+            android:layout_height="23dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginBottom="28dp"
+            android:gravity="left"
+            android:text="num of travels"
+            android:textSize="12dp"
+            cardView:layout_constraintBottom_toBottomOf="parent"
+            cardView:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_companytravels">
+
+    <fragment
+        android:id="@+id/nav_companytravels"
+        android:name="com.example.myapplication2.UI.ui.CompanyTravels.CompanyTravelsFragment"
+        android:label="@string/suggestyourself"
+        tools:layout="@layout/fragment_companytravels" />
+
+    <fragment
+        android:id="@+id/nav_registeredtravels"
+        android:name="com.example.myapplication2.UI.ui.RegisteredTravels.RegisteredTravelsFragment"
+        android:label="@string/mytravels"
+        tools:layout="@layout/fragment_registeredtravels" />
+
+    <fragment
+        android:id="@+id/nav_historytravels"
+        android:name="com.example.myapplication2.UI.ui.HistoryTravels.HistoryTravelsFragment"
+        android:label="@string/manager"
+        tools:layout="@layout/fragment_historytravels" />
+</navigation>
